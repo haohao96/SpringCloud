@@ -1,0 +1,15 @@
+server:
+  port: 2003
+
+spring:
+  application:
+    name: purchaseConsul
+  cloud:
+    consul:
+      host: localhost
+      discovery:
+        heartbeat:
+          enabled: true
+        service-name: purchaseConsul
+        port: 8500
+

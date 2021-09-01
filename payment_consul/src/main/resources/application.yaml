@@ -1,0 +1,13 @@
+server:
+  port: 1004
+spring:
+  application:
+    name: paymentconsul
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+        heartbeat:
+          enabled: true

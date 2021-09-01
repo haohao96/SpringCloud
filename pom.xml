@@ -20,10 +20,12 @@
         <module>eureka_server2</module>
         <module>payment</module>
         <module>payment2</module>
-        <module>purchase</module>
-        <module>comutils</module>
         <module>payment_zk</module>
+        <module>payment_consul</module>
+        <module>purchase</module>
         <module>purchase_zk</module>
+        <module>purchase_consul</module>
+        <module>comutils</module>
     </modules>
     <description>Demo SpringCloud project for Spring Boot</description>
     <properties>
