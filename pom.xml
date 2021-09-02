@@ -23,6 +23,7 @@
         <module>payment_zk</module>
         <module>payment_consul</module>
         <module>purchase</module>
+        <module>purchase_ribbon</module>
         <module>purchase_zk</module>
         <module>purchase_consul</module>
         <module>comutils</module>

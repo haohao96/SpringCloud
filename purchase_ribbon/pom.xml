@@ -8,9 +8,9 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.pyh</groupId>
-	<artifactId>purchase</artifactId>
+	<artifactId>purchase_ribbon</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>purchase</name>
+	<name>purchase_ribbon</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -20,37 +20,34 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.pyh</groupId>
-			<artifactId>comutils</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-			<version>3.0.3</version>
-		</dependency>
 
-
-
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!--swagger2-->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.cloud</groupId>-->
+<!--			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
+<!--			<version>2.0.0.RELEASE</version>-->
+<!--		</dependency>-->
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<version>3.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+			<version>2.0.1.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.pyh</groupId>
+			<artifactId>comutils</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency><!--swagger2-->
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
@@ -68,16 +65,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<fork>true</fork>
-					<addResources>true</addResources>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
